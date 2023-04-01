@@ -170,6 +170,60 @@
     
     
     <article
+  id="post-坏坏坏"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/04/01/%E5%9D%8F%E5%9D%8F%E5%9D%8F/"
+    >regedit项无法写入解决</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/04/01/%E5%9D%8F%E5%9D%8F%E5%9D%8F/" class="article-date">
+  <time datetime="2023-04-01T15:20:48.000Z" itemprop="datePublished">2023-04-01</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h6 id="unchain-vbs-notepad-exe"><a href="#unchain-vbs-notepad-exe" class="headerlink" title="unchain.vbs(notepad.exe)"></a>unchain.vbs(notepad.exe)</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Dim unchain </span><br><span class="line"></span><br><span class="line">Set unchain=wscript.createobject(<span class="string">&quot;wscript.shell&quot;</span>) </span><br><span class="line"></span><br><span class="line">unchain.popup(<span class="string">&quot;取消禁用注册表&quot;</span>) </span><br><span class="line"></span><br><span class="line">unchain.regwrite<span class="string">&quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System \DisableRegistryTools&quot;</span>,00000000,<span class="string">&quot;REG_DWORD&quot;</span> </span><br><span class="line"></span><br><span class="line">unchain.popup(<span class="string">&quot;解锁成功&quot;</span>) </span><br><span class="line">wscript.popup.quit()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h6 id="del-inf-notepad-exe"><a href="#del-inf-notepad-exe" class="headerlink" title="del.inf(notepad.exe)"></a>del.inf(notepad.exe)</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[Version]</span><br><span class="line">Signature=“$CHICAGO$”</span><br><span class="line">[DefaultInstall]</span><br><span class="line">DelReg=del</span><br><span class="line">[del]</span><br><span class="line">HKCU,Software\Microsoft\Windows\CurrentVersion\Policies\</span><br><span class="line">System,Disableregistrytools,</span><br><span class="line">1,00,00,00,00</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h6 id="任意-js-notepad-exe"><a href="#任意-js-notepad-exe" class="headerlink" title="任意.js(notepad.exe)"></a>任意.js(notepad.exe)</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">VAR WSHShell=WSCRIPT.CREA-TOBJEt(“WSCRIPT.SHELL”);</span><br><span class="line"></span><br><span class="line">WSHShell.Popup(“为你解锁注册表”);</span><br><span class="line"></span><br><span class="line">WSHShell.RegWrite(“HKCU\\Software\\Microsoft\\</span><br><span class="line"></span><br><span class="line">Windows\\CurrentVersion\\Policies\\</span><br><span class="line"></span><br><span class="line">system\\DisableRegistryTools”, 0,“reg_dword”);</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-2023-3-29，网站差点就寄了"
   class="article article-type-post"
   itemscope
